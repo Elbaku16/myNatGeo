@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Registro - Torneo de Ajedrez</title>
+    <link rel="stylesheet" href="practice4.css">
+</head>
+<body>
+    <header>
+        <h1> Registro - Torneo de Ajedrez </h1>
+    </header>
+
+    <main>
+        <img src="caballo1.png" alt="caballo ajedrez" class="side-img">
+
+        <form id="chessForm" novalidate>
+            <label for="name">Nombre</label><br>
+            <input type="text" id="name" placeholder="Ej. Cristiano Ronaldo" autocomplete="name">
+            <small id="nameFeedback" class="feedback"></small><br>
+
+            <label for="email">TuCorreo(nombre@gmail.com)</label><br>
+            <input type="email" id="email" placeholder="Tucorreo@gmail.com" autocomplete="email">
+            <small id="emailFeedback" class="feedback"></small><br>
+
+            <label for="phone">Teléfono (10 dígitos)</label><br>
+            <input type="text" id="phone" placeholder="556651441213" inputmode="numeric" autocomplete="tel">
+            <small id="phoneFeedback" class="feedback"></small><br>
+
+            <button type="submit">Registrar</button>
+        </form>
+
+        <img src="caballo2.png" alt="caballo ajedrez" class="side-img">
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
