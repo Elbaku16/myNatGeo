@@ -31,7 +31,7 @@ function validateName() {
         setFeedback(nameInput, nameFeedback, false, 'Solo letras y espacios');
         return false;
     }
-    setFeedback(nameInput, nameFeedback, true, 'Nombre válido ✅');
+    setFeedback(nameInput, nameFeedback, true, 'Nombre valido ');
     return true;
 }
 
@@ -45,7 +45,7 @@ function validateEmail() {
         setFeedback(emailInput, emailFeedback, false, 'Correo inválido — debe ser @gmail.com');
         return false;
     }
-    setFeedback(emailInput, emailFeedback, true, 'Correo válido ✅');
+    setFeedback(emailInput, emailFeedback, true, 'Correo valido ');
     return true;
 }
 
@@ -60,7 +60,7 @@ function validatePhone() {
         setFeedback(phoneInput, phoneFeedback, false, 'El teléfono debe tener 10 dígitos');
         return false;
     }
-    setFeedback(phoneInput, phoneFeedback, true, 'Teléfono válido ✅');
+    setFeedback(phoneInput, phoneFeedback, true, 'Telefono valido ');
     return true;
 }
 
@@ -77,7 +77,7 @@ form.addEventListener('submit', function (e) {
     const okPhone = validatePhone();
 
     if (okName && okEmail && okPhone) {
-        alert('Registro exitoso. ¡Buena suerte en el torneo! ♟️');
+        alert('Registro exitoso. ¡Buena suerte en el torneo! ♟');
         form.reset();
         [nameInput, emailInput, phoneInput].forEach(i => {
             i.classList.remove('input-valid', 'input-invalid');
@@ -92,3 +92,4 @@ form.addEventListener('submit', function (e) {
         else phoneInput.focus();
     }
 });
+
