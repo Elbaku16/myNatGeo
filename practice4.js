@@ -51,9 +51,9 @@ function validateEmail() {
 
 function validatePhone() {
     const raw = phoneInput.value;
-    const digits = (raw.match(onlyDigits) || []).join(''); // extraer solo dígitos
+    const digits = (raw.match(onlyDigits) || []).join(''); 
     if (digits.length === 0) {
-        setFeedback(phoneInput, phoneFeedback, false, 'El teléfono es obligatorio');
+        setFeedback(phoneInput, phoneFeedback, false, 'El telefono es obligatorio');
         return false;
     }
     if (digits.length !== 10) {
@@ -77,7 +77,7 @@ form.addEventListener('submit', function (e) {
     const okPhone = validatePhone();
 
     if (okName && okEmail && okPhone) {
-        alert('Registro exitoso. ¡Buena suerte en el torneo! ♟');
+        alert('Registro exitoso. ¡Buena suerte en el torneo! ');
         form.reset();
         [nameInput, emailInput, phoneInput].forEach(i => {
             i.classList.remove('input-valid', 'input-invalid');
@@ -92,4 +92,5 @@ form.addEventListener('submit', function (e) {
         else phoneInput.focus();
     }
 });
+
 
